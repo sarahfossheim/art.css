@@ -1,6 +1,6 @@
 # art.css
 
-I regularly make CSS drawings on [CodePen](https://codepen.io/collection/nwzQJq), this repo will mainly serve as a back-up of them for now. Feel free to open any issues for suggestions of what to draw next ✨
+I regularly make CSS drawings on [CodePen](https://codepen.io/collection/nwzQJq), this repo will mainly serve as a back-up of them for now. Feel free to open any issues for suggestions on what to draw next ✨
 
 ## Completed projects
 - [Abatron 803 calculator](https://codepen.io/fossheim/pen/xxbmXZq)
