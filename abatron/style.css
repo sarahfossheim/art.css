@@ -1,249 +1,249 @@
 body {
-    background-color: #BAE0D5;
-    background-image: linear-gradient(#097F97, #07667C);
-    min-height: 100vh;
-    min-width: 100vw;
-    background-size: 100%;
-  }
-  
-  
-  .calculator {
-    background-color: #C1C2B0;
-    background: linear-gradient(#C4C9C3, #C6C8C7),
-      linear-gradient(
-        #C6C8C7 25%,
-        #484939 27%,
-        #87877B 30%,
-        #87877B 32%,
-        #E7E7DD 33%,
-        #C6C8C7 33.5%,
-        #C6C8C7 38%,
-        #484939 40%,
-        #87877B 43%,
-        #87877B 45%,
-        #E7E7DD 46%,
-        #C6C8C7 46.5%,
-        #C6C8C7 51%,
-        #484939 53%,
-        #87877B 56%,
-        #87877B 58%,
-        #E7E7DD 59%,
-        #C6C8C7 59.5%,
-        #C6C8C7 64%,
-        #484939 66%, 
-        #87877B 69%,
-        #87877B 71%,
-        #E7E7DD 72%,
-        #C6C8C7 72.5%,
-        #C6C8C7 77%,
-        #484939 79%,
-        #87877B 82%,
-        #87877B 84%,
-        #E7E7DD 85%,
-        #C6C8C7 85.5%,
-        #C6C8C7 90%,
-        #484939 92%,
-        #87877B 95%,
-        #87877B 97%,
-        #E7E7DD 98%,
-        #C6C8C7 98.5%
-      );
-    background-size: 100%, 100% 80px;
-    background-position: 0 80px, top left;
-    background-repeat: no-repeat;
-    display: block;
-    width: 550px;
-    height: 980px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 8px;
-    box-sizing: border-box;
-    position: relative;
-    
-    box-shadow: 5px 5px 15px 0px rgba(6,76,92,0.25);
-  }
-  
-  .label {
-    position: absolute;
-    width: 110px;
-    height: 35px;
-    display: block;
-    text-align: center;
-    box-sizing: border-box;
-    
-    top: 32px;
-    left: 70px;
-    
-    background-color: #959FA1;
-    background-image: radial-gradient(#8D9FA9, #959FA1);
-    border-radius 5px;
-    box-shadow: -1px 0.5px 2px rgba(0,0,0,0.1) inset;
-    
-    font-family: "Oswald", sans-serif;
-    text-transform: uppercase;
-  }
-  
-  .label p {
-    margin-top: 0.3em;
-  }
-  
-  .output {
-    position: absolute;
-    background-color: #0B0301;
-    width: 448px;
-    height: 190px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    top: 130px;
-    border-radius: 1px;
-    padding: 0 30px;
-    box-sizing: border-box;
-  }
-  
-  .output p {
-    font-family: 'Odibee Sans', cursive;
-    text-transform: uppercase;
-    letter-spacing: 0.55em;
-  
-    color: #9F2530;
-    text-align: right;
-    font-size: 1.5em;
-    text-shadow: 0px 0px 3px rgba(186, 68, 80, 0.9);
-    
-    position: absolute;
-    right: 1em;
-    bottom: 1.5em;
-  }
-  
-  .indent {
-    display: block;
-    position: relative;
-    top: 350px;
-    width: 485px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-    
-    background-image: linear-gradient(82deg, rgba(197, 196, 191, 0.75), rgba(109,105,102,0.5));
-  }
-  
-  .keypad {
-    position: absolute;
-    top: 20px;
-    display: block;
-    width: 454px;
-    background-color: black;
-    padding: 2px 0 1px 2px;
-    border-radius: 3px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-  }
-  
-  .key {
-    cursor: pointer;
-    
-    display: inline-block;
-    width: 110px;
-    height: 110px;  
-    margin: 0;
-    margin-right: -2px;
-    margin-left: 1px;
-    margin-top: 1px;
-    margin-bottom: 2px;
-    border-radius: 3px;
-  }
-  
-  .key .key-content {
-    display: block;
-    width: 95px;
-    height: 95px;
-    text-align: center;
-    box-sizing: border-box;
-    padding-top: 18px;
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 3em;
-    border-radius: 33%;
-    position: relative;
-    top: 7.5px;
-    left: 7.5px;
-  }
-  
-  .key.number {
-    background-color: #333F3B;
-    background: linear-gradient(
-      90deg,
-      #182629,
-      #4B5556 80%);
-    background-size: 100%;
-    background-position: top left;
-  
-  }
-  
-  .key.number .key-content {
-    background-color: #3E4C4D;
-    background: radial-gradient(
-      #3E4C4D,
-      #38474A,
-      #343E3F
+  background-color: #BAE0D5;
+  background-image: linear-gradient(#097F97, #07667C);
+  min-height: 100vh;
+  min-width: 100vw;
+  background-size: 100%;
+}
+
+
+.calculator {
+  background-color: #C1C2B0;
+  background: linear-gradient(#C4C9C3, #C6C8C7),
+    linear-gradient(
+      #C6C8C7 25%,
+      #484939 27%,
+      #87877B 30%,
+      #87877B 32%,
+      #E7E7DD 33%,
+      #C6C8C7 33.5%,
+      #C6C8C7 38%,
+      #484939 40%,
+      #87877B 43%,
+      #87877B 45%,
+      #E7E7DD 46%,
+      #C6C8C7 46.5%,
+      #C6C8C7 51%,
+      #484939 53%,
+      #87877B 56%,
+      #87877B 58%,
+      #E7E7DD 59%,
+      #C6C8C7 59.5%,
+      #C6C8C7 64%,
+      #484939 66%, 
+      #87877B 69%,
+      #87877B 71%,
+      #E7E7DD 72%,
+      #C6C8C7 72.5%,
+      #C6C8C7 77%,
+      #484939 79%,
+      #87877B 82%,
+      #87877B 84%,
+      #E7E7DD 85%,
+      #C6C8C7 85.5%,
+      #C6C8C7 90%,
+      #484939 92%,
+      #87877B 95%,
+      #87877B 97%,
+      #E7E7DD 98%,
+      #C6C8C7 98.5%
     );
-    background-size: 150% 350%;
-    background-position: center center;
-    color: #F5FFFF;
-  }
+  background-size: 100%, 100% 80px;
+  background-position: 0 80px, top left;
+  background-repeat: no-repeat;
+  display: block;
+  width: 550px;
+  height: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  box-sizing: border-box;
+  position: relative;
   
-  .key.operation {
-    background-color: #858585;
-    background: linear-gradient(
-      90deg,
-      #858585,
-      #F6F1EE 80%);
-    background-size: 100%;
-    background-position: top left;
-  }
+  box-shadow: 5px 5px 15px 0px rgba(6,76,92,0.25);
+}
+
+.label {
+  position: absolute;
+  width: 110px;
+  height: 35px;
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
   
-  .key.operation .key-content {
-    background-color: #FFFDFC;
-    background: radial-gradient(#E4E4E4, #E5DFDF, #F7F5F6);
-    background-size: 100% 200%;
-    background-position: center center;
-    color: #110D0E;
-  }
+  top: 32px;
+  left: 70px;
   
-  .key.operation .key-content .multiplication {
-    font-size: 0.7em;
-    position: relative;
-    top: -0.15em;
-  }
+  background-color: #959FA1;
+  background-image: radial-gradient(#8D9FA9, #959FA1);
+  border-radius 5px;
+  box-shadow: -1px 0.5px 2px rgba(0,0,0,0.1) inset;
   
-  .key.number .key-content .decimal {
-    position: relative;
-    top: -0.25em;
-  }
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+.label p {
+  margin-top: 0.3em;
+}
+
+.output {
+  position: absolute;
+  background-color: #0B0301;
+  width: 448px;
+  height: 190px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 130px;
+  border-radius: 1px;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.output p {
+  font-family: 'Odibee Sans', cursive;
+  text-transform: uppercase;
+  letter-spacing: 0.55em;
+
+  color: #9F2530;
+  text-align: right;
+  font-size: 1.5em;
+  text-shadow: 0px 0px 3px rgba(186, 68, 80, 0.9);
   
-  .key.general {
-    background-color: #9F3F0A;
-    background: linear-gradient(
-      90deg,
-      #9F3F0A,
-      #CA8430 80%);
-    background-size: 100%;
-    background-position: top left;
-  }
+  position: absolute;
+  right: 1em;
+  bottom: 1.5em;
+}
+
+.indent {
+  display: block;
+  position: relative;
+  top: 350px;
+  width: 485px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
   
-  .key.general .key-content {
-    background-color: #D26402;
-    background: radial-gradient(
-      #E67333,
-      #C5722C,
-      #D26402);
-    background-size: 200% 300%;
-    background-position: center center;
-    color: #FFEEE6;
-    font-size: 2em;
-    padding-top: 30px;
-  }
+  background-image: linear-gradient(82deg, rgba(197, 196, 191, 0.75), rgba(109,105,102,0.5));
+}
+
+.keypad {
+  position: absolute;
+  top: 20px;
+  display: block;
+  width: 454px;
+  background-color: black;
+  padding: 2px 0 1px 2px;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.key {
+  cursor: pointer;
+  
+  display: inline-block;
+  width: 110px;
+  height: 110px;  
+  margin: 0;
+  margin-right: -2px;
+  margin-left: 1px;
+  margin-top: 1px;
+  margin-bottom: 2px;
+  border-radius: 3px;
+}
+
+.key .key-content {
+  display: block;
+  width: 95px;
+  height: 95px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 18px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 3em;
+  border-radius: 33%;
+  position: relative;
+  top: 7.5px;
+  left: 7.5px;
+}
+
+.key.number {
+  background-color: #333F3B;
+  background: linear-gradient(
+    90deg,
+    #182629,
+    #4B5556 80%);
+  background-size: 100%;
+  background-position: top left;
+
+}
+
+.key.number .key-content {
+  background-color: #3E4C4D;
+  background: radial-gradient(
+    #3E4C4D,
+    #38474A,
+    #343E3F
+  );
+  background-size: 150% 350%;
+  background-position: center center;
+  color: #F5FFFF;
+}
+
+.key.operation {
+  background-color: #858585;
+  background: linear-gradient(
+    90deg,
+    #858585,
+    #F6F1EE 80%);
+  background-size: 100%;
+  background-position: top left;
+}
+
+.key.operation .key-content {
+  background-color: #FFFDFC;
+  background: radial-gradient(#E4E4E4, #E5DFDF, #F7F5F6);
+  background-size: 100% 200%;
+  background-position: center center;
+  color: #110D0E;
+}
+
+.key.operation .key-content .multiplication {
+  font-size: 0.7em;
+  position: relative;
+  top: -0.15em;
+}
+
+.key.number .key-content .decimal {
+  position: relative;
+  top: -0.25em;
+}
+
+.key.general {
+  background-color: #9F3F0A;
+  background: linear-gradient(
+    90deg,
+    #9F3F0A,
+    #CA8430 80%);
+  background-size: 100%;
+  background-position: top left;
+}
+
+.key.general .key-content {
+  background-color: #D26402;
+  background: radial-gradient(
+    #E67333,
+    #C5722C,
+    #D26402);
+  background-size: 200% 300%;
+  background-position: center center;
+  color: #FFEEE6;
+  font-size: 2em;
+  padding-top: 30px;
+}
