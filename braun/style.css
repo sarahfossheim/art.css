@@ -1,0 +1,209 @@
+/* Tutorials on: fossheim.io */
+/* Works best in chrome */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #E5C657;
+  }
+  
+  .radio {
+    display: block;
+    width: 540px;
+    height: 330px;
+    margin: 150px auto 0 auto;
+    margin: calc(50vh - 160px) auto 0 auto;
+    border-radius: 30px;
+    background-image: linear-gradient(
+      135deg,
+      #C0BDAE,
+      #B8B9B3,
+      #E5E1E0
+    );
+    box-shadow: 0 0 0 8px #DCE3E0 inset,
+      0px 80px 60px -70px #384140;
+    position: relative;
+  }
+  
+  .speaker {
+    display: block;
+    width: 495px;
+    height: 290px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 20px;
+    border-radius: 4px 4px 12px 12px;
+    background-image: radial-gradient(
+        transparent 30%,
+        #F1E9E6 40%
+      ),
+      linear-gradient(
+        #EAE7E7,
+        transparent
+      ),
+      linear-gradient(
+        90deg,
+        #EAE7E7,
+        transparent
+      ),
+      radial-gradient(
+        #141912 50%,
+        transparent 50%
+      ),
+      linear-gradient(
+        135deg,
+        #A8A39D,
+        #9CA19A
+      );
+    background-size: 
+      13px 13px,
+      100% 2px,
+      2px 100%,
+      290px 290px,
+      100% 100%;
+    background-repeat: 
+      repeat,
+      repeat,
+      repeat,
+      no-repeat,
+      no-repeat;
+    background-position: 
+      0 0,
+      20px 0,
+      0 0;
+    box-shadow: 0 0 0.5px 0.75px #222C21;
+  }
+  
+  .button {
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 15px;
+    background-color: blue;
+    background-image: radial-gradient(#EFF0F4 58%, transparent 62%),
+      radial-gradient(#E0E2DF 20%, #CDC8CB 50%);
+    background-size: 100% 100%, 300% 300%;
+    background-repeat: no-repeat;
+    background-position: 3px 2px, -80px -50px;
+  }
+  
+  .button.right {
+    right: 50px;
+    box-shadow: 15px 10px 20px -8px #717168,
+      0 0 1.5px -0.5px #717168;
+  }
+  
+  .button.left {
+    right: 145px;
+    box-shadow: 15px 15px 24px -8px #717168,
+      0 0 1.5px -0.5px #717168;
+  }
+  
+  .selector {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: black;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    background-image: radial-gradient(
+        #7D7E84 64%,
+        transparent 65%
+      ),
+      radial-gradient(
+         #9CA9A8 20%,
+         #7E828D 60%,
+         #888B92
+      );
+    background-repeat: no-repeat;
+    background-position: 2px 2px, -175px -175px;
+    background-size: 100% 100%, 200% 200%;
+  }
+  
+  .info {
+    display: block;
+    width: 165px;
+    height: 165px;
+    border-radius: 100px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    background-image: radial-gradient(
+        #E2EBED 23%,
+        transparent 24%
+      ),
+      radial-gradient(
+        black 0%,
+        transparent 70%
+      ),
+      linear-gradient(
+        transparent,
+        transparent
+      ),
+      linear-gradient(
+        -45deg,
+        transparent 49%,
+        #BB2B39 50% 52%,
+        transparent 53%
+      ),
+      linear-gradient(
+        #AFB5B3 50%,
+        #999795 50%
+      );
+    background-image: radial-gradient(
+        #E2EBED 23%,
+        transparent 24%
+      ),
+      radial-gradient(
+        black 0%,
+        transparent 70%
+      ),
+      conic-gradient(
+        transparent 0% 14%,
+        rgba(245,254,254,0.3) 16% 19%,
+        rgba(255,255,255,0.6) 25% 30%,
+        rgba(245,254,254,0.2) 32% 35%,
+        transparent 40% 65%,
+        rgba(245,254,254,0.4) 68% 73%,
+        rgba(255,255,255,0.6) 76% 80%,
+        rgba(245,254,254,0.2) 83% 85%,
+        transparent 89% 100%
+      ),
+      linear-gradient(
+        -45deg,
+        transparent 49%,
+        #BB2B39 50% 52%,
+        transparent 53%
+      ),
+      linear-gradient(
+        #AFB5B3 50%,
+        #999795 50%
+      );
+    background-size: 
+      100% 100%,
+      60px 60px,
+      100% 100%,
+      50% 50%,
+      100% 100%;
+    background-repeat: no-repeat;
+    background-position: 
+      0 0, 
+      58px 57px,
+      0 0,
+      100% 0,
+      0 0;
+    box-shadow: -6px 0px 1px #7E828D inset,
+      4px 4px 8px -3px #191418 inset,
+      5px 5px 20px -10px #384140 inset;
+  }
