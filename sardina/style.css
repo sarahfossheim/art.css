@@ -1,0 +1,530 @@
+/* Tutorials: fossheim.io */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #66C8B0;
+    background-image: radial-gradient(#66BCC8, transparent);
+  }
+  
+  .sardina {
+    display: block;
+    width: 475px;
+    height: 264px;
+    margin: 300px auto 0 auto;
+    position: relative;
+  }
+  
+  .body {
+    margin-left: -100px;
+    display: block;
+    width: 475px;
+    height: 264px;
+    background-color: #F6EFE5;
+    border-radius: 50px;
+    box-shadow: 0 1px 1px rgba(100,93,87,0.40) inset, 0 0 1px 2px rgba(255,250,244,0.7) inset, 0 -2px 2px #EBE4DA inset, 0px 40px 40px -40px rgba(0,0,0,0.3); 
+    position: relative;
+  }
+  
+  .decoration {  
+    background-color:#F23038;
+    background-image: linear-gradient(
+      30deg,
+      #E7D9CE 12%,
+      transparent 12.5% 87%,
+      #E7D9CE 87.5%
+    ), linear-gradient(
+      150deg,
+      #E7D9CE 12%,
+      transparent 12.5% 87%,
+      #E7D9CE 87.5%
+    ), linear-gradient(
+      30deg,
+      #E7D9CE 12%,
+      transparent 12.5% 87%,
+      #E7D9CE 87.5%
+    ), linear-gradient(
+      150deg,
+      #E7D9CE 12%,
+      transparent 12.5% 87%,
+      #E7D9CE 87.5%
+    ), linear-gradient(
+      60deg,
+      #302627 25%,
+      transparent 25.5% 75%,
+      #302627 75%
+    ), linear-gradient(
+      60deg,
+      #302627 25%,
+      transparent 25.5% 75%,
+      #302627 75%
+    ); /* F23038, 302627 */
+    background-size: 40px 70px;
+    background-position: 0 0,
+      0 0,
+      20px 35px,
+      20px 35px,
+      0 0,
+      20px 35px;
+  }
+  
+  .sardina .body .decoration {
+    display: block;
+    width: 425px;
+    height: 215px;
+    position: absolute;
+    top: 24.5px;
+    left: 25px;
+    border-radius: 35px;
+    box-shadow: 0 0.5px 2px 1px rgba(44,34,33,0.5) inset, 0 0.5px 8px 1px rgba(44,34,33,0.1) inset, 0 0 2px #FFFAF4;
+  }
+  
+  .flash {
+    display: block;
+    width: 275px;
+    height: 470px;
+    position: absolute;
+    right: -95px;
+    bottom: 60px;
+  }
+  
+  .stick {
+    display: block;
+    width: 115px;
+    height: 225px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F7F0E8;
+    border-radius: 4px;
+    box-shadow: 0 -1px 2px #ECE3DC inset, 0 0 1px 1px #F2F1EC inset, 0 0 0.5px #998E72;
+  }
+  
+  .sardina .flash .decoration {
+    display: block;
+    width: 75px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+    box-shadow: 0 0.5px 2px 0.5px #CA422B inset, 0 0 2px #FFFAF4;
+  }
+  
+  .light {
+    display: block;
+    width: 275px;
+    height: 275px;
+    background-color: #FBF6F0;
+    border-radius: 150px;
+    position: absolute;
+    left: -80px;
+    top: -245px;
+    box-shadow: 0 95px 20px -80px rgba(55,45,45,0.3), 0 0 3px #DAD5D1 inset, 2px 0 2px #FBF4EC inset;
+  }
+  
+  .screen {
+    display: block;
+    position: absolute;
+    top: 22px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 230px;
+    height: 230px;
+    border-radius: 115px;
+    background-image: linear-gradient(#FFFFFD 45%, #DDD7D7 60% 65%, #EBE3E1 79% 90%, #E1DCD8 95% 100%);
+    background-size: 6px 6px;
+    box-shadow: 0 0 3px #DFDCD7 inset, 0 0 2px -1px #97928E inset, -0.5px 0 0.5px #97928E inset, 0 2px 3px -1px #FEFEFC;
+  }
+  
+  .middle {
+    display: block;
+    position: absolute;
+    width: 145px;
+    height: 95px;
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    top: 67.5px;
+    left: 0;
+    right: 0;
+    border-radius: 1px;
+    box-shadow: -0.5px 0 1px 1.5px #FFFBFA;
+    background-image: linear-gradient(
+      90deg,
+      #FCF7F3 33%,
+      rgba(164,163,161,0.15) 33% 66%,
+      transparent 66%
+    ),
+      linear-gradient(
+      #FFFBF8,
+      #FFFBF7,
+      #FFFCF8 10%,
+      #ECE2D9,
+      #DBD1D2,
+      #E7DDD4,
+      #F8EBE3,
+      #FBF2EB,
+      #F7EEE9,
+      #F7F2EF,
+      #FCF8F5,
+      #EEE9E3 80%,
+      #DCD8D5 84% 85%,
+      #FFF9F6 90%
+    );
+    background-size: 5px 5px, 100% 100%;
+  }
+  
+  .lens {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: #F1E8E1;
+    border-radius: 100px;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 5px 40px -10px rgba(60,6,0,0.4);
+  }
+  
+  .plaque {
+    display: block;
+    width: 185px;
+    height: 185px;
+    background-color: #D9D3D3;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 8px;
+    box-shadow: 0 0 1px 1.5px #D1CAC2, 0 0.5px 2px #F9F4F1 inset, 0 1.5px 2px #B9B4B0 inset;
+  }
+  
+  .plastic {
+    display: block;
+    width: 110px;
+    height: 110px;
+    border-radius: 60px;
+    background-color: #F4F0ED;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    right: 0;
+    box-shadow: 0 -0.5px 1px 0.5px #2A110A, 0 -0.5px 1px 0.25px #BDB8B2 inset, 0 1px 1px 0.5px #ECDACC inset;
+  }
+  
+  .glass {
+    display: block;
+    background-color: #1F1317;
+    width: 95px;
+    height: 95px;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 8px;
+    background-image: radial-gradient(
+      rgba(255,255,255,0.5),
+      rgba(0,0,0,0.15) 50%,
+      transparent
+    ),
+      radial-gradient(
+        #39312F 7%,
+        #524A48 10%,
+        #2B2321 14%,
+        #342C2A,
+        #2D2523 28%,
+        #373232 33%,
+        #241C19 35%,
+        #463C3B,
+        #2A221F,
+        #3F3534,
+        #140A09 45% 46%,
+        #837978 46.5% 47%,
+        #444243 47.5% 48%,
+        #191718 50%,
+        #3D3938,
+        #211B1D,
+        #2F2929,
+        #1F1317 65% 
+      );
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 0 -10px, center center;
+  }
+  
+  .reflection {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 27px;
+    border-radius: 20px;
+    background-image: radial-gradient(
+      rgba(245,245,245,0.10) 55%,
+      transparent 65%
+    ), radial-gradient(
+      rgba(245,245,245,0.03),
+      rgba(245,245,245,0.08)
+    );
+    background-repeat: repeat-x, repeat;
+    background-position: -20px -15px, center center;
+    background-size: 100% 100%;
+  }
+  
+  .button {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 10px;
+    background-image: radial-gradient(
+      rgba(243,242,238,0.95) 55%,
+      transparent 70%
+    ),
+    linear-gradient(
+      #937B6F,
+      #55321E 20%,
+      transparent 20%
+    ),
+    radial-gradient(
+      #CFC2B2 15%,
+      #A38F84 17% 20%,
+      #D8C8BB 25%,
+      #CEC0B5
+    );
+    background-size: 10px 10px, 100% 100%, 100% 100%;
+    background-repeat: repeat-x, no-repeat, no-repeat;
+    background-position: -12px -2px, center center, center center;
+    box-shadow: 0.5px 0.5px 1px #FFF6F2 inset,
+      -0.5px -0.5px 2px #8F7E76 inset;
+    position: absolute;
+    top: 47%;
+  }
+  
+  .button.left {
+    left: 10px;
+  }
+  
+  .button.right {
+    right: 12px;
+  }
+  
+  .wheel.left {
+    display: block;
+    width: 81px;
+    height: 30px;
+    position: absolute;
+    top: -30px;
+    left: 35px;
+    border-radius: 3px 3px 0 0;
+    background-image: linear-gradient(90deg, #E3DFD4, #F7F1E5 33% 75%, #E4DACE);
+    box-shadow: 0 1.5px 1px -1px #ACA39E,
+      0 10px 2px -9.5px #715D4B;
+  }
+  
+  .wheel.left:after {
+    content: "";
+    display: block;
+    width: 91px;
+    height: 16px;
+    background-color: red;
+    position: relative;
+    left: -5px;
+    top: 5px;
+    border-radius: 2px 2px 6px 6px;
+    background-image: linear-gradient(
+      90deg,
+      rgba(245, 242, 237, 0.75) 20%,
+      transparent
+    ), linear-gradient(
+      transparent 80%,
+      #E3D3C4 
+    ),
+      linear-gradient(90deg, #ECE7E1, #F5F1E8, #EBE4DC);
+    background-size: 100% 100%, 100% 100%, 5px 5px;
+  }
+  
+  .wheel.right {
+    display: block;
+    width: 62px;
+    height: 28px;
+    position: absolute;
+    top: -28px;
+    right: 60px;
+    border-radius: 5px 5px 0 0;
+    background-image: linear-gradient(90deg, #F1E6E0, #ECE5DF 33% 75%, #D1C3B8);
+    box-shadow: 0 1.5px 1px -1px #ACA39E,
+      0 10px 2px -9.5px #715D4B;
+  }
+  
+  .wheel.right:after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 16px;
+    background-color: red;
+    position: relative;
+    left: -4px;
+    top: 5px;
+    border-radius: 3px 3px 6px 6px;
+    background-image: linear-gradient(
+      90deg,
+      rgba(245, 242, 237, 0.75) 50%,
+      transparent
+    ),
+    linear-gradient(
+      transparent 70%,
+      #E6D6C7 
+    ),
+      linear-gradient(90deg, #F5F2ED 40%, #F8F1EB 45% 55%, #E8DED5 65%);
+    background-size: 100% 100%, 100% 100%, 5px 5px;
+  }
+  
+  .shutter {
+    display: block;
+    width: 30px;
+    height: 15px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: -15px;
+    border-radius: 4px 4px 0 0;
+    background-image: linear-gradient(
+      90deg,
+      #0F0A06 10%, 
+      #343537 20% 35%,
+      #16110B 45% 55%,
+      #3A3537 65% 75%,
+      #3A2F29 80% 90%,
+      #17130F
+    );
+  }
+  
+  .viewfinder-container {
+    display: block;
+    width: 75px;
+    height: 40px;
+    background-color: #F3EEE8;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: -40px;
+    box-shadow: 0 -4px 4px -3px rgba(209,200,191,0.75) inset,
+      -1.5px 0 2px -2px #DEDDD9 inset,
+      1.5px 0 2px -2px #DEDDD9 inset,
+      4px 0 4px -5px #F6F3EE inset,
+      -4px 0 4px -5px #F6F3EE inset;
+  }
+  
+  .viewfinder {
+    display: block;
+    width: 50px;
+    height: 30px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 4px;
+    border-radius: 1px;
+    background-image: radial-gradient(
+      rgba(245,245,245, 0.5),
+      rgba(245,245,245, 0.1) 50%
+    ),
+    radial-gradient(
+      rgba(176, 138, 99, 0.75) 45%, 
+      transparent 50%
+    ),
+    radial-gradient(
+      #7E6C62,
+      #A89181,
+      #150D0A,
+      #2D231A,
+      #2B1D14 28% 33%,
+      #AB9387 35% 36%,
+      #715C50 38% 45%,
+      #AB9387 48%,
+      transparent 50%
+    ),
+    radial-gradient(
+      #826857,
+      #6F543F
+    );
+    background-size: 100% 128%, 120% 135%, 50px 50px, 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 0 -10px, -5px -20px, center center, center center;
+    box-shadow: 0 1px 1px #604A3C inset,
+      0 -1px 1px #604A3C inset,
+      0 0 1px 1px #FFF8EB, 
+      -1px 0 1px #2F251C inset,
+      1px 0 3px #594536 inset,
+      0 0 1px 1px #FFFDF8;
+  }
+  
+  .viewfinder-container:after {
+    content: "";
+    display: block;
+    border-bottom: 28px solid #F3EEE8;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    height: 0;
+    width: 35px;
+    position: absolute;
+    top: -28px;
+    left: 0px;
+  }
+  
+  .screw {
+    display: block;
+    position: absolute;
+    top: -5px;
+    width: 15px;
+    height: 5px;
+    background-image: linear-gradient(
+      90deg,
+      #CAC1B8,
+      #FFFAEE,
+      #D9CBBE,
+      #B5A89F
+    );
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0.5px 0.5px 1px rgba(48,38,32,0.4) inset, 0 -1px 1px #AFA69D inset;
+  }
+  
+  .screw.left {
+    left: 180px;
+  }
+  
+  .screw.right {
+    right: 180px;
+  }
