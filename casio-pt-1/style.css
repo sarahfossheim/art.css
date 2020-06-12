@@ -1,0 +1,871 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333335;
+    background-color: #E996AF;
+}
+
+.casio {
+    display: block;
+    width: 960px;
+    height: 260px;
+    margin: 100px auto 0 auto;
+    margin: calc(50vh - 150px) auto 0 auto;
+    border-radius: 4px;
+    background-color: #EFEFE7;
+    background-image: linear-gradient(90deg, #EFEFE7, #F4F3EE);
+    position: relative;
+    box-shadow: 0 -2px 2px -0.5px #D0CCC1 inset,
+        2px 0 2px -0.5px #E1DFE0 inset,
+        0 3px 1px #FBFAF8 inset,
+        0 45px 10px -25px rgba(0,0,0,0.1),
+        0 65px 50px -10px rgba(0,0,0,0.05);
+}
+
+.speaker {
+    display: block;
+    width: 180px;
+    height: 200px;
+    position: absolute;
+    top: 12px;
+    left: 14px;
+    border-radius: 0.5px;
+    background-color: #D6C6A2;
+    background-image: linear-gradient(transparent 40%, #EFEFE7 60%),
+        linear-gradient(90deg, #BFA58D, transparent 2% 96%, #C9B59A),
+        linear-gradient(#D1BBA3 20%, transparent 65%),
+        linear-gradient(90deg, #D6C6A2, #E2D9CA),
+        linear-gradient(90deg, #D6C6A2, #E2D9CA),
+        radial-gradient(#897866 60%, transparent 61%);
+    background-size: 100% 8px,
+        100% 100%,
+        100% 8px,
+        6px 100%,
+        6px 100%,
+        190px 190px;
+    background-repeat: repeat,
+        no-repeat,
+        repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat;
+    background-position: 0 0,
+        0 0,
+        0 0,
+        50px 0,
+        120px 0,
+        -7px 7px;
+}
+
+.controls {
+    display: block;
+    width: 745px;
+    height: 80px;
+    background-color: transparent;
+    position: absolute;
+    top: 7px;
+    right: 15px;
+    box-shadow: 0 2px 0.75px -0.8px #543F44 inset, 0 -2.5px 0.75px -0.8px #543F44 inset;
+}
+
+.controls-labels {
+    display: block;
+    width: 745px;
+    height: 30px;
+    font-family: sans-serif;
+    color: #4F4949;
+}
+
+.controls-labels p {
+    font-size: 0.5rem;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    border: 1px solid #7A7174;
+    padding: 0px 8px;
+    border-radius: 2px;
+    position: absolute;
+    top: 4px;
+}
+
+.controls-labels p:nth-child(1) {
+    left: 55px;
+}
+
+.controls-labels p:nth-child(2) {
+    left: 130px;
+    padding: 0 15px;
+}
+
+.controls-labels p:nth-child(3) {
+    left: 265px;
+    padding: 0 15px;
+}
+
+.controls-labels p:nth-child(4) {
+    left: 400px;
+}
+
+.controls-labels p:nth-child(5) {
+    left: 645px;
+    padding: 0 11px;
+}
+
+.controls-bar {
+    display: block;
+    width: 745px;
+    height: 30px;
+    position: absolute;
+    top: 30px;
+    background-image: linear-gradient(
+            90deg, 
+            transparent 0% 2.5%, #DCDCD0 2.5% 5%,
+            transparent 5% 7.5%, #E1DFD3 7.5% 10%,
+            transparent 10% 12.5%, #D5D5CD 12.5% 15%,
+            transparent 15% 17.5%, #DCDCD0 17.5% 20%,
+            transparent 20% 22.5%, #E1DFD3 22.5% 25%,
+            transparent 25% 27.5%, #D5D5CD 27.5% 30%,
+            transparent 30% 32.5%, #DCDCD0 32.5% 35%,
+            transparent 35% 37.5%, #E1DFD3 37.5% 40%,
+            transparent 40% 42.5%, #D5D5CD 42.5% 45%,
+            transparent 45% 47.5%, #DCDCD0 47.5% 50%,
+            transparent 50% 52.5%, #E1DFD3 52.5% 55%,
+            transparent 55% 57.5%, #D5D5CD 57.5% 60%,
+            transparent 60% 62.5%, #DCDCD0 62.5% 65%,
+            transparent 65% 67.5%, #E1DFD3 67.5% 70%,
+            transparent 70% 72.5%, #D5D5CD 72.5% 75%,
+            transparent 75% 77.5%, #DCDCD0 77.5% 80%,
+            transparent 80% 82.5%, #E1DFD3 82.5% 85%,
+            transparent 85% 87.5%, #D5D5CD 87.5% 90%,
+            transparent 90% 92.5%, #DCDCD0 92.5% 95%,
+            transparent 95% 97.5%, #E1DFD3 97.5% 100%
+        ), linear-gradient(
+            90deg, 
+            transparent 0% 7%, #DCDCD0 7% 14%,
+            transparent 14% 21%, #E1DFD3 21% 28%,
+            transparent 28% 35%, #D5D5CD 35% 42%,
+            transparent 42% 49%, #DCDCD0 49% 56%,
+            transparent 56% 63%, #E1DFD3 63% 70%,
+            transparent 70% 77%, #D5D5CD 77% 84%,
+            transparent 84% 91%, #DCDCD0 91% 98%,
+            transparent 98%
+        ), linear-gradient(
+            90deg, 
+            transparent 0% 2.5%, #E0DED1 2.5% 5%,
+            transparent 5% 7.5%, #DDDBCE 7.5% 10%,
+            transparent 10% 12.5%, #DEDCCF 12.5% 15%,
+            transparent 15% 17.5%, #E0DED1 17.5% 20%,
+            transparent 20% 22.5%, #E1DFD3 22.5% 25%,
+            transparent 25% 27.5%, #DDDBCE 27.5% 30%,
+            transparent 30% 32.5%, #DEDCCF 32.5% 35%,
+            transparent 35% 37.5%, #E0DED1 37.5% 40%,
+            transparent 40% 42.5%, #D5D5CD 42.5% 45%,
+            transparent 45% 47.5%, #DDDBCE 47.5% 50%,
+            transparent 50% 52.5%, #E4E2D6 52.5% 55%,
+            transparent 55% 57.5%, #E0DED1 57.5% 60%,
+            transparent 60% 62.5%, #DCDCD0 62.5% 65%,
+            transparent 65% 67.5%, #DDDBCE 67.5% 70%,
+            transparent 70% 72.5%, #DEDCCF 72.5% 75%,
+            transparent 75% 77.5%, #E0DED1 77.5% 80%,
+            transparent 80% 82.5%, #E1DFD3 82.5% 85%,
+            transparent 85% 87.5%, #E4E2D6 87.5% 90%,
+            transparent 90% 92.5%, #E0DED1 92.5% 95%,
+            transparent 95% 97.5%, #E1DFD3 97.5% 100%
+        ), linear-gradient(
+            90deg, 
+            transparent 0% 7%, #CAC8BC 7% 14%,
+            transparent 14% 21%, #DBD9CD 21% 28%,
+            transparent 28% 35%, #D0CEC2 35% 42%,
+            transparent 42% 49%, #CAC8BC 49% 56%,
+            transparent 56% 63%, #DBD9CD 63% 70%,
+            transparent 70% 77%, #D0CEC2 77% 84%,
+            transparent 84% 91%, #CAC8BC 91% 98%,
+            transparent 98%
+        ), linear-gradient(
+            90deg, 
+            transparent 0% 2.5%, #E0DED1 2.5% 5%,
+            transparent 5% 7.5%, #DDDBCE 7.5% 10%,
+            transparent 10% 12.5%, #DEDCCF 12.5% 15%,
+            transparent 15% 17.5%, #E0DED1 17.5% 20%,
+            transparent 20% 22.5%, #E1DFD3 22.5% 25%,
+            transparent 25% 27.5%, #DDDBCE 27.5% 30%,
+            transparent 30% 32.5%, #DEDCCF 32.5% 35%,
+            transparent 35% 37.5%, #E0DED1 37.5% 40%,
+            transparent 40% 42.5%, #D5D5CD 42.5% 45%,
+            transparent 45% 47.5%, #DDDBCE 47.5% 50%,
+            transparent 50% 52.5%, #E4E2D6 52.5% 55%,
+            transparent 55% 57.5%, #E0DED1 57.5% 60%,
+            transparent 60% 62.5%, #DCDCD0 62.5% 65%,
+            transparent 65% 67.5%, #DDDBCE 67.5% 70%,
+            transparent 70% 72.5%, #DEDCCF 72.5% 75%,
+            transparent 75% 77.5%, #E0DED1 77.5% 80%,
+            transparent 80% 82.5%, #E1DFD3 82.5% 85%,
+            transparent 85% 87.5%, #D5D5CD 87.5% 90%,
+            transparent 90% 92.5%, #DCDCD0 92.5% 95%,
+            transparent 95% 97.5%, #E1DFD3 97.5% 100%
+        ), linear-gradient(
+            90deg, 
+            transparent 0% 2.5%, #DCDCD0 2.5% 5%,
+            transparent 5% 7.5%, #E1DFD3 7.5% 10%,
+            transparent 10% 12.5%, #D5D5CD 12.5% 15%,
+            transparent 15% 17.5%, #DCDCD0 17.5% 20%,
+            transparent 20% 22.5%, #E1DFD3 22.5% 25%,
+            transparent 25% 27.5%, #D5D5CD 27.5% 30%,
+            transparent 30% 32.5%, #DCDCD0 32.5% 35%,
+            transparent 35% 37.5%, #E1DFD3 37.5% 40%,
+            transparent 40% 42.5%, #D5D5CD 42.5% 45%,
+            transparent 45% 47.5%, #DCDCD0 47.5% 50%,
+            transparent 50% 52.5%, #E1DFD3 52.5% 55%,
+            transparent 55% 57.5%, #D5D5CD 57.5% 60%,
+            transparent 60% 62.5%, #DCDCD0 62.5% 65%,
+            transparent 65% 67.5%, #DDDBCE 67.5% 70%,
+            transparent 70% 72.5%, #DEDCCF 72.5% 75%,
+            transparent 75% 77.5%, #E0DED1 77.5% 80%,
+            transparent 80% 82.5%, #E1DFD3 82.5% 85%,
+            transparent 85% 87.5%, #E4E2D6 87.5% 90%,
+            transparent 90% 92.5%, #E0DED1 92.5% 95%,
+            transparent 95% 97.5%, #E1DFD3 97.5% 100%
+        ), linear-gradient(
+            90deg, 
+            transparent 0% 7%, #CAC8BC 7% 14%,
+            transparent 14% 21%, #DBD9CD 21% 28%,
+            transparent 28% 35%, #D0CEC2 35% 42%,
+            transparent 42% 49%, #CAC8BC 49% 56%,
+            transparent 56% 63%, #DBD9CD 63% 70%,
+            transparent 70% 77%, #D0CEC2 77% 84%,
+            transparent 84% 91%, #CAC8BC 91% 98%,
+            transparent 98%
+        ), linear-gradient(90deg, #F1EEE7, #EDE8E2, #EBE8E1);
+    background-size: 52px 20px,
+        16px 20px,
+        52px 20px, 
+        16px 20px,
+        52px 20px, 
+        52px 20px,
+        16px 20px,
+        100% 100%;
+    background-repeat: no-repeat;
+    background-position: 1px 5px, 
+        107px 5px, 
+        203px 5px, 
+        325px 5px,
+        537px 5px,
+        589px 5px,
+        730px 5px,
+        top left;
+    box-shadow: 0 2px 1px -1px #C1BEB5 inset, 0 -2px 1px -1px #FCFCFA inset, 1px 0 0.5px -0.5px #DFDFD7 inset, -2.5px 0 1px -1px #D4CDC5 inset;
+    border-radius: 1px;
+}
+
+.mode-container {
+    display: block;
+    width: 45px;
+    height: 20px;
+    border-radius: 2px;
+    background-image: linear-gradient(90deg,#E6E4D7, #EAE7DE);
+    position: absolute;
+    top: 5px;
+    left: 55px;
+    box-shadow: 0 4.5px 1px -2px #837363 inset,
+        4px 0 3px -2px #BEB8A8 inset,
+        -3px 0 2px -2px #DBDBD3 inset,
+        0 -0.5px 1px #DBD8CF inset,
+        0 1px 0.5px -0.75px #FFFCF5;
+}
+
+.mode-bar {
+    display: block;
+    width: 35px;
+    height: 8px;
+    background-color: black;
+    position: absolute;
+    left: 5px;
+    top: 7px;
+    background-image: linear-gradient(#1E1E23 45%, #3D3D3D 55%);
+    border-radius: 1px;
+    box-shadow: 0 -0.5px 0.5px 0 #D6DBDE, 0 0 1px 0.5px #F7F4ED, 0 -1.25px 2px -1px #2A2925 inset, 0 1.25px 2px -1px black inset;
+}
+
+.mode-handle {
+    display: block;
+    width: 14px;
+    height: 7px;
+    border-radius: 3px;
+    position: absolute;
+    top: 8px;
+    left: 7px;
+    background-image: radial-gradient(transparent 40%, #1A1C1D 70%),
+        linear-gradient(#23272A 60%, #484852 70%);
+    box-shadow: 0 1.5px 1px -1px #676B6E inset,
+        1px 3px 2px -2px #6B685F,
+        3px 5px 5px rgba(110, 106, 94, 0.3);
+}
+
+.volume-container {
+    display: block;
+    width: 65px;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    left: 130px;
+    border-radius: 2px;
+    background-image: linear-gradient(90deg, #E5E0DA, #F0EEE1);
+    box-shadow: 0 1px 0.5px -0.75px #FFFCF5,
+        0 3.5px 1.5px -1.5px #807060 inset,
+        0 -1.75px 2px -2px #ECE9E0 inset,
+        3.5px 0 2px -2px #C7BFB2 inset,
+        -1.5px 0 0.5px -0.75px #DBD8D1 inset,
+        0 -0.5px 1px #D2D1CF;
+}
+
+.volume-bar {
+    display: block;
+    width: 55px;
+    height: 10px;
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    border-radius: 1px;
+    background-image: linear-gradient(#1D1E23 45%, #3F3D40 55%);
+}
+
+.volume-handle {
+    display: block;
+    width: 19px;
+    height: 19px;
+    border-radius: 2px;
+    position: absolute;
+    left: 14px;
+    top: 1px;
+    background-color: #6A6964;
+    background-image: radial-gradient(#262626 50%, #3E3D39 80%),
+        radial-gradient(#353537, #3E3E40 80%, #323031 90%),
+        linear-gradient(#4C4942, #676860 10% 25%, #282C2C 30% 70%, #777370 75%),
+        linear-gradient(#4C4942, #676860 10% 25%, #282C2C 30% 70%, #777370 75%);
+    background-size: 17px 4px,
+        15px 15px,
+        3px 20px,
+        3px 20px;
+    background-repeat: no-repeat;
+    background-position: bottom left,
+        2px 0,
+        top right,
+        top left;
+    box-shadow: 0 1.5px 0.75px -0.5px #454442 inset,
+        0 2px 1px -0.5px #797876 inset,
+        -0.5px 0 0.5px rgba(30,32,36,0.5) inset,
+        5px 0 6px -2px rgba(24,23,28,0.3),
+        0 5px 4px rgba(76,74,72,0.3),
+        0 6px 2px -3px rgba(76,74,72,0.75);
+}
+
+.tone-container {
+    display: block;
+    width: 52px;
+    height: 20px;
+    position: absolute;
+    left: 265px;
+    top: 5px;
+    border-radius: 2px;
+    box-shadow: 0 3.5px 1.5px -1.5px #6B5E4B inset,
+        4px 0 3px -2px #A9A79B inset,
+        -3px 0 2px -2px #D1CAB7 inset,
+        0 -0.5px 1px #DEDCD0 inset,
+        0 1px 0.5px -0.75px #FFFCF5;
+    background-image: linear-gradient(90deg, rgba(207,202,196,0.5), rgba(246,243,226,0.5));
+}
+
+.tone-bar {
+    display: block;
+    width: 45px;
+    height: 9px;
+    position: absolute;
+    left: 3px;
+    top: 6px;
+    background-image: linear-gradient(#282C2D 25%, #3C3D3F 35%, #373739);
+    border-radius: 1px;
+    box-shadow: 0 0.5px 0.5px #F8F5EC,
+        -1px 0 0.5px #CBC8C1,
+        1px 0 0.5px #E9EBDD,
+        0 -1px 0.5px #E2E2E2;
+}
+
+.tone-handle {
+    display: block;
+    position: absolute;
+    width: 19px;
+    height: 18px;
+    border-radius: 2px;
+    left: 5px;
+    top: 1px;
+    background-color: #6A6964;
+    background-image: radial-gradient(#272729, #22211C 60%, #5F5C55),
+        radial-gradient(#3E3F41, #363638 80%, #272729 90%),
+        linear-gradient(#4C4942, #676860 10% 25%, #282C2C 30% 70%, #777370 75%),
+        linear-gradient(#4F4A46, #65645F);
+    background-size: 18px 4px,
+        15px 15px,
+        2px 20px,
+        3px 20px;
+    background-repeat: no-repeat;
+    background-position: bottom left,
+        2.25px 0,
+        top right,
+        top left;
+    box-shadow: 0 1.5px 0.75px -0.5px #494846 inset,
+        0 2.5px 1px -0.75px #313131 inset,
+        -0.75px 0 0.5px -0.25px #454545 inset,
+        0.5px 0 0.5px #3D3A35 inset,
+        0 5px 4px 1px rgba(76,74,72,0.4),
+        0 6px 2px -3px rgba(76,74,72,0.7);
+}
+
+.btn {
+    display: block;
+    width: 9px;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    border-radius: 1px;
+}
+
+.clear.btn {
+    left: 350px;
+    background-color: #7C99DB;
+    box-shadow:  0 -1px 1px -0.5px #2F3B43 inset,
+        0 -2px 0.5px -0.5px #474D67 inset,
+        0 0 1px 1.25px #93A6D1 inset,
+        0 0 1px 0.5px #889FBF inset,
+        0 3px 3px -1px #59524C,
+        0 4px 4px -1px #9D998E,
+        -0.5px 0 0.5px #707E9A,
+        0 2px 4px #D6D4C5;
+}
+
+.del.btn {
+    left: 375px;
+    background-color: #EB8372;
+    box-shadow:   0.5px 0 0.5px #945C4E inset,
+        0 -1px 1px -0.5px #6A331E inset,
+        0 -2px 0.5px -0.5px #A65F50 inset,
+        0 0 1px 1.25px #D38671 inset,
+        0 0 1px 0.5px #EF8C7F inset,
+        0 3px 3px -1px #966C51,
+        0 4px 4px -1px #C9A99A,
+        -0.5px 0 0.5px #D5AEA2,
+        0 2px 4px #DBBBB0;
+}
+
+.down.btn {
+    left: 400px;
+    background-color: #EE8273;
+    box-shadow:   0.5px 0 0.5px #C07C69 inset,
+        0 -1px 1px -0.5px #6A331E inset,
+        0 -2px 0.5px -0.5px #A65F50 inset,
+        0 0 1.25px 1px #EC8775 inset,
+        0 0 1px 0.5px #EF8C7F inset,
+        0 3px 3px -1px #966C51,
+        0 4px 4px -1px #C9A99A,
+        -0.5px 0 0.5px #D5AEA2,
+        0 2px 4px #DBBBB0;
+}
+
+.up.btn {
+    left: 425px;
+    background-color: #EB8372;
+    box-shadow:   0.5px 0 0.5px #945C4E inset,
+        0 -1px 1px -0.5px #6A331E inset,
+        0 -2px 0.5px -0.5px #A65F50 inset,
+        0 0 1.25px 1px #D38671 inset,
+        0 0 1px 1px #EF8C7F inset,
+        0 3px 3px -1px #966C51,
+        0 4px 4px -1px #C9A99A,
+        -0.5px 0 0.5px #D5AEA2,
+        0 2px 4px #DBBBB0;
+}
+
+.select.btn {
+    left: 450px;
+    background-color: #EE8273;
+    box-shadow:   0.5px 0 0.5px #945C4E inset,
+        0 -1px 1px -0.5px #6A331E inset,
+        0 -2px 0.5px -0.5px #A65F50 inset,
+        0 0 1.25px 1px #D38671 inset,
+        0 0 1px 1px #EF8C7F inset,
+        0 3px 3px -1px #966C51,
+        0 4px 4px -1px #C9A99A,
+        -0.5px 0 0.5px #D5AEA2,
+        0 2px 4px #DBBBB0;
+}
+
+.reset.btn {
+    left: 475px;
+    background-color: #EDAF5D;
+    box-shadow: 0.75px 0 0.5px #AE8059 inset,
+        0 -0.75px 0.5px #975A2B inset,
+        0 0 1px 1.5px #E3AC75 inset,
+        0 0 1px 3px #E6AE60 inset,
+        0 3px 3px -1px #966C51,
+        0 4px 4px -1px #C9A99A,
+        1px 0 3px #F8CD94,
+        -1px 0 5px -2px #D1A78E,
+        0 0 4px 1px #EAD4B4;
+}
+
+.demo.btn {
+    left: 500px;
+    background-color: #8ED8C5;
+    box-shadow: 1.25px 0 0.5px #729883 inset,
+        0.5px 0 1px 2px #9AD4BE inset,
+        -3px 0 4px -2px #B4BFAF,
+        0 3px 3px -1px #464F3E,
+        0 0 5px #D6E4DA,
+        0 0 7px #D1D1C7;
+}
+
+.memory.btn {
+    left: 525px;
+    background-color: #92A5C3;
+    box-shadow:  0 -1px 1px -0.5px #2F3B43 inset,
+        0 -2px 0.5px -0.5px #474D67 inset,
+        0 0 1px 1.25px #93A6D1 inset,
+        0 0 1px 0.5px #889FBF inset,
+        0 3px 3px -1px #59524C,
+        0 4px 4px -1px #9D998E,
+        -0.5px 0 0.5px #707E9A,
+        0 2px 4px #D6D4C5;
+}
+
+.bigbtn {
+    display: block;
+    width: 35px;
+    height: 20px;
+    background-color: red;
+    border-radius: 3px;
+    position: absolute;
+    top: 4px;
+    background-color: #759ADE;
+}
+
+.bigbtn.onekey-1 {
+    right: 65px;
+
+    background-image: linear-gradient(
+        transparent 25%,
+
+        #405E94 28%,
+        #A4BFF6 31%,
+        #8398D1 34%,
+
+        #405E94 37%,
+        #A4BFF6 40%,
+        #8398D1 43%,
+
+        #405E94 46%,
+        #A4BFF6 49%,
+        #8398D1 52%,
+
+        #405E94 55%,
+        #A4BFF6 58%,
+        #8398D1 61%,
+
+        #405E94 64%,
+        #A4BFF6 67%,
+        #8398D1 70%,
+
+        #405E94 73%,
+        #A4BFF6 76%,
+        #8398D1 79%,
+        
+        transparent 80%
+    );
+    box-shadow: 0 -0.5px 1px #15172C inset,
+        1.25px 0 0.5px -0.5px #3B3B47 inset,
+        2.5px 0 1px #65748B inset,
+        3.5px 0 1px #98AED3 inset,
+        0 1px 1px #D4E0FA inset,
+        0 -1.5px 1px #8DA3D4 inset,
+        -0.5px 0 0.5px #9AAED1 inset,
+        -0.75px 0.25px 0.5px #2C2C38,
+        -1.25px -0.1px 0.1px #EDEEF3,
+        0 5px 3px -2.5px #4F4B40,
+        0 3px 4px -1px #ACA59D,
+        0 4px 5px #CFCBCA;
+}
+
+.bigbtn.onekey-2 {
+    right: 20px;
+
+    background-image: linear-gradient(
+        transparent 25%,
+
+        #405E94 28%,
+        #A4BFF6 31%,
+        #8398D1 34%,
+
+        #405E94 37%,
+        #A4BFF6 40%,
+        #8398D1 43%,
+
+        #47659B 46%,
+        #A4BFF6 49%,
+        #8398D1 52%,
+
+        #5871A7 55%,
+        #A4BFF6 58%,
+        #8398D1 61%,
+
+        #405E94 64%,
+        #A4BFF6 67%,
+        #8398D1 70%,
+
+        #5871A7 73%,
+        #A4BFF6 76%,
+        #8398D1 79%,
+        
+        transparent 80%
+    );
+    box-shadow: 0 -0.5px 1px #535E70 inset,
+        1.25px 0 0.5px -0.5px #3B3B47 inset,
+        2.5px 0 1px #65748B inset,
+        3.5px 0 1px #98AED3 inset,
+        0 1px 1px #D4E0FA inset,
+        0 -1.5px 1px #8DA3D4 inset,
+        -0.5px 0 0.5px #9AAED1 inset,
+        -0.75px 0.25px 0.5px #454F59,
+        -1.25px -0.1px 0.1px #EDEEF3,
+        0 5px 3px -2.5px #433E38,
+        0 3px 4px -1px #C0B9B1,
+        0 4px 5px #CFCBCA;
+}
+
+.keys-container {
+    display: block;
+    width: 720px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    right: 35px;
+    background-color: #E3DFDA;
+    background-image: linear-gradient(90deg, #E3DFDA, #DFDCD3);
+    border-radius: 0.5px;
+    box-shadow: 0 3px 1.25px -0.75px #282421 inset,
+        5px 0 2px #AFA896 inset,
+        -2px 0 4px #9F9684 inset,
+        -6px 0 2px #BFB3A5 inset,
+        0 -1.5px 1px 1px #F1F6EF;
+}
+
+.white {
+    width: 710px;
+    height: 135px;
+    background-color: #141312;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    box-shadow:  -1px 0 2px -1px rgba(40,36,33,0.35),
+        3px 0 2px -1px rgba(40,36,33,0.5),
+        -2px 0 3px -2px #574E45,
+        0 8px 6px -3px #CBC8B9;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 2px;
+
+}
+
+.white .key {
+    height: 133px;
+    background-color: #E9E7D8;
+    border-radius: 3px;
+    background-image: linear-gradient(#E9E7D8, #F4F2E3);
+    box-shadow: 1px 0 1px -0.5px #F6EDDC inset,
+        -1.25px 0 0.5px -0.5px #9D9885 inset, 
+        0 0 1px 2px #F7F5E8 inset,
+        0 10px 5px -5px rgba(34,33,28,0.75),
+        0 10px 7px -3px rgba(40,36,33,0.25);
+}
+
+.black {
+    display: grid;
+    width: 665px;
+    height: 72px;
+    position: absolute;
+    top: 2px;
+    left: 35px;
+    grid-template-columns: 21px 21px 21px 21px 21px 21px 21px 21px 21px 21px 21px 21px 21px 21px 21px 21px;
+    grid-gap: 21px;
+}
+
+.black .key {
+    background-color: #000;
+    background-image: linear-gradient(
+        #B5BDD2 15%,
+        #556478 17%,
+        #3C4759 30%,
+        #262E31 90%,
+        #192026 92%
+    );
+    box-shadow: 1px 0 1px #1D212D inset,
+        2px 0 1px #252D3A inset, 
+        -2px 0 0.75px #252D3A inset, 
+        0 -2px 0.5px #22252A inset,
+        0 -6px 0.5px #3B3F42 inset,
+        0 0 0.5px 1px #181913,
+        7px 7px 1px -5px #FAFBF3,
+        -7.25px 7px 1px -5px #FAFBF3;
+    border-radius: 1.5px;
+}
+
+.black .key:nth-child(1) {
+    background-image: linear-gradient(
+        #B5BDD2 4%,
+        #556478 7%,
+        #3C4759 50%,
+        #262E31 90%
+    );
+}
+
+.black .key:nth-child(4) {
+    background-image: linear-gradient(
+        176deg,
+        #B5BDD2 4%,
+        #556478 8%,
+        #3C4759 30%,
+        #262E31 90%,
+        #192026 92%
+    );
+}
+
+.black .key:nth-child(5) {
+    background-image: linear-gradient(
+        178deg,
+        #B5BDD2 2%,
+        #556478 3%,
+        #3C4759 30%,
+        #262E31 90%,
+        #192026 92%
+    );
+}
+
+.black .key:nth-child(7) {
+    background-image: linear-gradient(
+        #B5BDD2 12%,
+        #556478 15%,
+        #3C4759 30%,
+        #262E31 90%,
+        #192026 92%
+    );
+}
+
+.black .key:nth-child(8) {
+    background-image: linear-gradient(
+        182deg,
+        #B5BDD2 2%,
+        #556478 3% 10%,
+        #3C4759 30%,
+        #262E31 90%,
+        #192026 92%
+    );
+}
+
+.black .key:nth-child(9) {
+    background-image: linear-gradient(
+        #B5BDD2 7%,
+        #556478 10% 20%,
+        #3C4759 30%,
+        #262E31 90%,
+        #192026 92%
+    );
+}
+
+.black .key:nth-child(11) {
+    background-image: linear-gradient(
+        182deg,
+        #B5BDD2 7%,
+        #556478 10% 20%,
+        #3C4759 30%,
+        #262E31 90%,
+        #192026 92%
+    );
+}
+
+.black .key:nth-child(12) {
+    background-image: linear-gradient(
+        181deg,
+        #B5BDD2 5%,
+        #556478 8%,
+        #3C4759 30%,
+        #262E31 90%,
+        #192026 92%
+    );
+}
+
+
+.black .key:nth-child(14) {
+    background-image: linear-gradient(
+        #B5BDD2 2%,
+        #556478 8%,
+        #3C4759 30%,
+        #262E31 90%,
+        #192026 92%
+    );
+}
+
+.black .key:nth-child(15) {
+    background-image: linear-gradient(
+        175deg,
+        #B5BDD2 3%,
+        #556478 8% 15%,
+        #3C4759 30%,
+        #262E31 90%,
+        #192026 92%
+    );
+}
+
+.black .key:nth-child(16) {
+    background-image: linear-gradient(
+        179deg,
+        #B5BDD2 5%,
+        #556478 7%,
+        #3C4759 30%,
+        #262E31 90%,
+        #192026 92%
+    );
+}
+
+.logo {
+    position: absolute;
+    top: 225px;
+    left: 15px;
+    display: block;
+    width: 180px;
+}
+
+.logo h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.logo h1 span:first-child {
+    color: #6C4351;
+    text-shadow: 0 0 1px #C3A9B2, 0 0 2px #EEDFE2;
+}
+
+.logo h1 span:last-child {
+    color: #ECE8E5;
+    letter-spacing: 1px;
+    text-shadow: 0px 0.5px 0.75px #BCBBB7,
+        0.5px 0.5px 0.75px #BCBBB7,
+        0.5px 0px 0.75px #BCBBB7,
+        0.5px -0.5px 0.75px #BCBBB7,
+        0 -0.5px 0.75px #BCBBB7,
+        -0.5px -0.5px 0.75px #BCBBB7,
+        -0.5px 0.5px 0.75px #BCBBB7,
+        -0.5px 0 0.75px #BCBBB7;
+}
