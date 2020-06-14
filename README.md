@@ -8,6 +8,7 @@ I regularly make CSS drawings on [CodePen](https://codepen.io/collection/nwzQJq)
 - [Macintosh](https://codepen.io/fossheim/details/oNjxrZa)
 - [Braun SK2 radio](https://codepen.io/fossheim/pen/OJypZve)
 - [Nintendo Switch Lite (coral)](https://codepen.io/fossheim/pen/jObGxQQ)
+- [Sardina camera](https://codepen.io/fossheim/pen/RwWJKWR)
 
 ## Tutorials
 - [Polaroid camera](https://fossheim.io/writing/posts/css-polaroid-camera/)
