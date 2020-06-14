@@ -9,7 +9,7 @@ I regularly make CSS drawings on [CodePen](https://codepen.io/collection/nwzQJq)
 - [Braun SK2 radio](https://codepen.io/fossheim/pen/OJypZve)
 - [Nintendo Switch Lite (coral)](https://codepen.io/fossheim/pen/jObGxQQ)
 - [Sardina camera](https://codepen.io/fossheim/pen/RwWJKWR)
-- [Casio PT-1Q Keyboard](https://codepen.io/fossheim/pen/VweaNYW)
+- [Casio PT-1 Keyboard](https://codepen.io/fossheim/pen/VweaNYW)
 
 ## Tutorials
 - [Polaroid camera](https://fossheim.io/writing/posts/css-polaroid-camera/)
