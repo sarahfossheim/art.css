@@ -10,6 +10,7 @@ I regularly make CSS drawings on [CodePen](https://codepen.io/collection/nwzQJq)
 - [Nintendo Switch Lite (coral)](https://codepen.io/fossheim/pen/jObGxQQ)
 - [Sardina camera](https://codepen.io/fossheim/pen/RwWJKWR)
 - [Casio PT-1 Keyboard](https://codepen.io/fossheim/pen/VweaNYW)
+- [Roland MC-500](https://codepen.io/fossheim/pen/BaKQGZJ)
 
 ## Tutorials
 - [Polaroid camera](https://fossheim.io/writing/posts/css-polaroid-camera/)
