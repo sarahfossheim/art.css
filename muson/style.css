@@ -1,6 +1,28 @@
+/*  
+ Page: https://fossheim.io
+ Patreon: https://patreon.com/fossheim
+ Buy Me A Coffee: https://buymeacoffee.com/fossheim
+ 
+ Inspired by the Muson toy synth.
+*/
+
+
 :root {
     --letter-1: #2E1F23;
     --letter-2: #1A1A24;
+
+    --button-1: #171310;
+    --button-2: #18171F;
+    --button-3: #353541;
+    --button-4: #302E33;
+
+    --center-1: #0F1622;
+    --center-2: #171D33;
+    --center-3: #222632;
+    --center-4: #313842;
+
+    --center-5: #1C1F30;
+    --center-6: #3D3A4D;
 }
 
 * {
@@ -18,10 +40,12 @@ body {
 .muson {
     display: block;
 
-    position: relative;
+    position: absolute;
+    top: 12rem;
+    left: 0;
+    right: 0;
 
-    margin: 10rem auto 0 auto;
-    margin: calc(50vh - 300px) auto 0 auto;
+    margin: 0 auto;
 
     width: 790px;
     height: 610px;
@@ -349,7 +373,7 @@ body {
     column-gap: 1px;
 
     position: absolute;
-    bottom: 155px;
+    bottom: 145px;
     left: 170px;
 
     border-radius: 3px;
@@ -448,4 +472,902 @@ body {
         -0.15px 0 0.5px #E6DFEF,
         1px 0 1px #33292A,
         -2px 0 2px #1A1420;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    column-gap: 1px;
+
+    width: 450px;
+    height: 65px;
+    border-radius: 2px;
+
+    position: absolute;
+    left: 170px;
+    bottom: 220px;
+
+    background-color: transparent;
+
+    box-shadow: 0 0 2px #DDABA0 inset,
+        0 0 1px #DDABA0,
+        0 -1px 2px #F1CBC2,
+        0 -1.5px 2px #FDE4DD,
+        0 1px 2px #E9CDBF,
+        0 1.5px 2px #FADACF,
+        
+        0 1.5px 1.5px -0.5px #D69C8E inset,
+        0 10px 10px -5px #E0B2A2 inset,
+        0 -10px 5px -5px rgba(178, 83, 65, 1) inset;
+}
+
+.button-container .button {
+    border-radius: 3px;
+
+    background-image: linear-gradient(
+        var(--button-1),
+        var(--button-2),
+        var(--button-3),
+        var(--button-4)
+    );
+
+    box-shadow: 0 0 0.25px var(--button-3),
+        -0.5px -0.75px 1px  rgba(241, 249, 255, 0.15) inset,
+        -0.75px -1.5px 1.5px rgba(44, 6, 13, 0.05) inset,
+    
+        0 -0.5px 0.75px 0.25px var(--button-1),
+        0 0.5px 0.75px 0.25px var(--button-4),
+
+        0 -0.75px 2px -0.75px var(--button-1),
+        0 0.75px 2px -0.75px var(--button-4),
+
+        -0.5px -2px 3px 0.75px rgba(44, 6, 13, 0.9),
+        -15px -20px 20px 2px rgba(150, 90, 64, 0.35),
+        
+        -7px -7px 5px -0.5px rgba(150, 90, 64, 0.5),
+        -7px -3px 7px rgba(201, 149, 135, 0.55),
+        -10px -10px 15px rgba(201, 149, 135, 0.25);
+
+    position: relative;
+    bottom: -3px;
+    left: -1.5px;
+
+    z-index: 11;
+
+    height: 100%;
+    height: calc(100% - 3px);
+}
+
+.button-container .button:nth-child(2) {
+    --button-1: #884B36;
+    --button-2: #8A4631;
+    --button-3: #BD6E48;
+    --button-4: #C2724D;
+
+    --center-1: #AC5B3D;
+    --center-2: #AE5E43;
+    --center-3: #BD6E48;
+    --center-4: #AA624A;
+    --center-5: #AE5E3D;
+    --center-6: #C77E5B;
+
+    z-index: 10;
+}
+
+.button-container .button:nth-child(3) {
+    --button-1: #C1353E;
+    --button-2: #C22B3A;
+    --button-3: #E42D49;
+    --button-4: #E32C3E;
+
+    --center-1: #D5132B;
+    --center-2: #DD1F3B;
+    --center-3: #E42849;
+    --center-4: #E33E50;
+    --center-5: #D51A39;
+    --center-6: #F44661;
+    
+    z-index: 9;
+}
+
+.button-container .button:nth-child(4) {
+    --button-1: #CC3929;
+    --button-2: #D73825;
+    --button-3: #FD5332;
+    --button-4: #F2501F;
+
+    --center-1: #F83D1E;
+    --center-2: #FD4022;
+    --center-3: #FC4D2E;
+    --center-4: #FF5A3D;
+    --center-5: #F0361F;
+    --center-6: #FF6959;
+    
+    z-index: 8;
+}
+
+.button-container .button:nth-child(5) {
+    --button-1: #F2AC26;
+    --button-2: #F0AC19;
+    --button-3: #F0B31C;
+    --button-4: #ECAF19;
+
+    --center-1: #E8A321;
+    --center-2: #F0AD14;
+    --center-3: #F3B61D;
+    --center-4: #F1A943;
+    --center-5: #EBAA09;
+    --center-6: #FBC131;
+    
+    z-index: 7;
+}
+
+.button-container .button:nth-child(6) {
+    --button-1: #FCB829;
+    --button-2: #F7CF31;
+    --button-3: #FFDB3C;
+    --button-4: #FBDB4C;
+
+    --center-1: #FFD531;
+    --center-2: #F6DC41;
+    --center-3: #FFDA3B;
+    --center-4: #FFE470;
+    --center-5: #FFD038;
+    --center-6: #FFE160;
+    
+    z-index: 6;
+}
+
+.button-container .button:nth-child(7) {
+    --button-1: #B5D496;
+    --button-2: #A1D890;
+    --button-3: #B5F4A7;
+    --button-4: #B3EAA4;
+
+    --center-1: #BDE899;
+    --center-2: #B8ED9F;
+    --center-3: #C6F6AA;
+    --center-4: #B7E6B8;
+    --center-5: #C6F6AC;
+    --center-6: #D9FEBB;
+    
+    z-index: 5;
+}
+
+.button-container .button:nth-child(8) {
+    --button-1: #3F88B5;
+    --button-2: #3494C7;
+    --button-3: #0FCEFB;
+    --button-4: #15CAF7;
+
+    --center-1: #26B7F0;
+    --center-2: #05BEFF;
+    --center-3: #04C6FB;
+    --center-4: #23D7FF;
+    --center-5: #08C2F5;
+    --center-6: #22D9FF;
+    
+    z-index: 4;
+}
+
+.button-container .button:nth-child(9) {
+    --button-1: #4058A2;
+    --button-2: #3C5FB9;
+    --button-3: #0D7BF4;
+    --button-4: #2680F8;
+
+    --center-1: #1864DC;
+    --center-2: #0071F1;
+    --center-3: #1A7DE5;
+    --center-4: #346DD4;
+    --center-5: #016EE3;
+    --center-6: #5298F0;
+    
+    z-index: 3;
+}
+
+.button-container .button:nth-child(10) {
+    --button-1: #3D306E;
+    --button-2: #503C79;
+    --button-3: #6A5ABD;
+    --button-4: #6A5ABD;
+
+    --center-1: #5141A3;
+    --center-2: #5647AE;
+    --center-3: #6052B3;
+    --center-4: #6758AB;
+    --center-5: #574DAE;
+    --center-6: #7B6BCE;
+    
+    z-index: 2;
+}
+
+.button-container .button .center {
+    display: block;
+    width: 100%;
+    height: 35px;
+    
+    width: calc(100% + 2px);
+
+    border-radius: 2px;
+
+    position: absolute;
+    top: 15px;
+    left: -1px;
+
+    background-image: linear-gradient(
+        var(--center-1),
+        var(--center-2),
+        var(--center-3)
+    );
+
+    box-shadow: 0 0 0.5px var(--center-3),
+    
+    -3px -20px 14px 3px rgba(20, 7, 14, 0.15),
+    3px 20px 14px -3px rgba(241, 249, 255, 0.025),
+    -3px -17px 14px -3px rgba(241, 249, 255, 0.025),
+
+    0 -20px 10px -10px rgba(44, 6, 13, 0.05) inset,
+    0 -0px 10px -10px rgba(44, 6, 13, 0.05) inset,
+    0 30px 20px -10px rgba(241, 249, 255, 0.05) inset,
+    
+    0 -0.25px 0.75px 0.25px var(--center-1),
+    0 0.5px 0.75px 0.25px var(--center-3),
+
+    0 -0.75px 2px -0.75px var(--center-1),
+    0 0.75px 2px -0.75px var(--center-3),
+    
+    0 1px 1.75px -0.75px var(--center-4) inset,
+    0 -3px 4px -3px var(--center-5) inset,
+    
+    0 3px 3px -3px var(--center-6),
+    
+    0 -4px 7px -4px var(--center-1),
+    0 4px 7px -4px var(--center-6);
+}
+
+.button-container .button .center:nth-child(1) { z-index: 22; }
+.button-container .button .center:nth-child(2) { z-index: 21; }
+.button-container .button .center:nth-child(3) { z-index: 20; }
+.button-container .button .center:nth-child(4) { z-index: 19; }
+.button-container .button .center:nth-child(5) { z-index: 18; }
+.button-container .button .center:nth-child(6) { z-index: 17; }
+.button-container .button .center:nth-child(7) { z-index: 16; }
+.button-container .button .center:nth-child(8) { z-index: 15; }
+.button-container .button .center:nth-child(9) { z-index: 14; }
+.button-container .button .center:nth-child(10) { z-index: 13; }
+
+.range-container {
+    display: block;
+    width: 490px;
+    height: 92px;
+    background-color: transparent;
+
+    position: absolute;
+    left: 150px;
+    bottom: 290px;
+
+    border-radius: 0 0 6px 6px;
+
+    box-shadow: -1px 1px 3px -1px #945A42,
+        0.5px -1px 1px #945A42 inset,
+        -4px 2px 7px -2.25px #BD8974,
+        1px -1px 1px -1px #BD8974 inset,
+        1px -1px 1.5px -1px #CF9981 inset,
+        
+        -0.5px -0.5px 0.5px #FFEDE0 inset,
+        -1.5px -1.5px 2px -1px #FFE8DB inset,
+        -4px -1.5px 4px -2px #FEDACA inset,
+        
+        2px 1px 2px -1px #FEDACA,
+        
+        0 0 10px #FBDAD1,
+        -10px 10px 25px rgba(60, 3, 0, 0.015);
+}
+
+.range-plate {
+    display: block;
+    width: 455px;
+    height: 65px;
+
+    position: absolute;
+    left: 17px;
+    top: 11px;
+
+    border-radius: 1.5px;
+
+    background-color: #BBC9E6;
+
+    background-image: linear-gradient(rgba(134, 141, 169, 0.1) 0 25%, transparent 25% 50%, rgba(143, 150, 178, 0.1) 50% 75%, transparent 75%),
+        linear-gradient(90deg, rgba(159, 167, 188, 0.05), rgba(119, 130, 160, 0.1), rgba(159, 167, 188, 0.05)),
+        radial-gradient(rgba(167, 172, 202, 0.65), transparent 60%),
+        radial-gradient(#7B84A3, #929CB7, #BBC9E6);
+    background-size: 100% 4px, 
+        20% 100%, 
+        200px 200px, 
+        200% 300%;
+    background-repeat: repeat, 
+        repeat, 
+        no-repeat, 
+        no-repeat;
+    background-position: center center, 
+        center center, 
+        center center, 
+        100% 50%;
+
+    box-shadow: 0 0 1px 0.25px #F6D0C7 inset,
+        0 -0.5px 0.75px 0.5px #8D6E6C inset,
+        0 0.75px 0.5px 0.25px #E7C9C7,
+        0 0.5px 2.5px 1.5px #F6D5CE,
+        
+        0 0 10px rgba(100, 98, 120, 0.25) inset;
+
+}
+
+.ranges {
+    list-style-type: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #1F233E;
+
+    font-size: 8px;
+    position: absolute;
+    top: 6px;
+
+    text-shadow: 0 0 0.2px #1F233E,
+        0 0 1px #BCBCD0;
+}
+
+.ranges li {
+    margin-bottom: 6px;
+}
+
+.left .ranges {
+    left: 27px;
+}
+
+.left .ranges li:first-child {
+    margin-left: 10px;
+}
+
+.left .ranges li:last-child {
+    margin-left: 6px;
+}
+
+.left .slider-wrapper {
+    width: 50px;
+    height: 50px;
+
+    background-color: #606B89;
+
+    position: absolute;
+    left: 50.25px;
+    top: 9.25px;
+
+    border-radius: 50px;
+
+    background-image: linear-gradient(20deg, #484653, #606B89, #8792AE);
+
+    box-shadow: -0.5px 0.5px 0.5px #606B89,
+        0 0 1px 0.15px #606B89 inset,
+        0 0 1px 0.25px #606B89,
+        0 0 4px 1px #7886A1,
+        
+        0 15px 10px -2px rgba(51, 46, 52, 0.25),
+
+        -30px -30px 50px 20px rgba(62, 21, 8, 0.1),
+        
+        -12px -25px 17px 4px rgba(62, 21, 8, 0.22),
+        -30px -45px 25px 4px rgba(62, 21, 8, 0.125),
+        -45px -50px 35px 8px rgba(62, 21, 8, 0.125),
+        
+        -5px -15px 10px -2px rgba(202, 206, 217, 0.25),
+        
+        0 0 20px 3px rgba(202, 206, 217, 0.75);
+}
+
+.left .slider {
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    background-color: black;
+
+    border-radius: 100px;
+
+    position: absolute;
+    left: -3.25px;
+    top: -3.25px;
+
+    background-image: linear-gradient(90deg, rgba(17, 18, 23, 0.5), transparent),
+        radial-gradient(#1A2332, #1C1F2D 66%, transparent 69%),
+        linear-gradient(90deg, rgba(17, 18, 23, 0.75), transparent),
+        linear-gradient(rgba(24, 31, 49, 0.9), transparent),
+        linear-gradient(45deg, transparent 30%, #7C899C, transparent 70%),
+        linear-gradient(-45deg, transparent 30%, #7C899C, transparent 70%),
+        radial-gradient(#1A2332, #1C1F2D, #10172A);
+
+    box-shadow: 0 0 1px 0.75px #10172A,
+        0 0 2px 0.75px rgba(67, 68, 88, 0.5);
+}
+
+.left p {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 6.5px;
+    color: #1F233E;
+    letter-spacing: 0.75px;
+
+    position: absolute;
+    left: 107px;
+    top: 29px;
+
+    text-shadow: 0 0 0.2px #1F233E,
+        0 0 1px #959AB2;
+}
+
+.center p, .center ul li {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 6px;
+    color: #1F233E;
+    letter-spacing: 0.5px;
+
+    text-shadow: 0 0 0.2px #1F233E,
+        0 0 1px #959AB2;
+
+    list-style-type: none;
+}
+
+.center p {
+    text-align: center;
+
+    position: absolute;
+    top: 6px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.center ul {
+    position: absolute;
+    bottom: 6px;
+    left: 200px;
+}
+
+.center ul li {
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.switch-wrapper {
+    display: block;
+    width: 35px;
+    height: 17px;
+
+    background-color: #0B090E;
+
+    border-radius: 35px;
+
+    position: absolute;
+    left: 210px;
+    top: 22px;
+
+    background-image: linear-gradient(rgba(30, 31, 57, 0), rgba(30, 31, 57, 0.5), rgba(30, 31, 57, 0)),
+        linear-gradient(#09080E, #0A090F);
+
+    box-shadow: 0 0.5px 0.5px #353245 inset,
+        0 -0.25px 0.5px #4F515E inset,
+        0 -0.75px 0.75px #30354B inset,
+        0 1px 1px -0.25px #55515F inset,
+        0 1.25px 1px -0.5px #28252E inset,
+        0 0 5px 1px #1E1F39 inset,
+        
+        0 0 0.5px 0.25px #353245,
+        0 0 1px #B4B9CC,
+        0 0.15px 2.5px -0.5px #9FA5BE,
+        
+        0 10px 10px -3px rgba(208, 209, 227, 0.5),
+        0 20px 20px rgba(208, 209, 227, 0.35);
+}
+
+.switch-button {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+
+    background-color: #140E1C;
+
+    position: absolute;
+    top: 0.35px;
+    left: 0.45px;
+
+    background-image: radial-gradient(rgba(208, 209, 227, 0.5), rgba(208, 209, 227, 0) 40%),
+        linear-gradient(90deg, #140E1C, #2D2C3C);
+
+    background-repeat: no-repeat,
+        no-repeat;
+
+    background-size: 120% 140%,
+        100% 100%;
+
+    background-position: 3px 3px,
+        top left;
+
+    box-shadow: 0 0 0.5px 0.75px #9A9CA9 inset,
+        0 0 0.15px #9A9CA9,
+        0 0 0.5px 0.25px #1B1B25,
+        0 0 1px #1E1E26,
+        
+        0 5px 10px -2px rgba(51, 46, 52, 0.25),
+
+        -5px -10px 10px 2px rgba(62, 21, 8, 0.15),
+        -10px -17px 20px 5px rgba(62, 21, 8, 0.1),
+        -20px -23px 25px 6px rgba(62, 21, 8, 0.15),
+        -30px -35px 30px 10px rgba(62, 21, 8, 0.1);
+}
+
+
+.right .slider-wrapper {
+    width: 50px;
+    height: 50px;
+
+    background-color: #606B89;
+
+    position: absolute;
+    right: 50.25px;
+    top: 9.25px;
+
+    border-radius: 50px;
+
+    background-image: linear-gradient(20deg, #3C3642, #4B485B, #535166);
+
+    box-shadow: -0.5px 0.5px 0.5px #606B89,
+        0 0 1px 0.15px #606B89 inset,
+        0 0 1px 0.25px #606B89,
+        0 0 4px 1px #7886A1,
+        
+        0 15px 10px -2px rgba(51, 46, 52, 0.25),
+
+        -30px -30px 50px 20px rgba(62, 21, 8, 0.1),
+        
+        -12px -25px 17px 4px rgba(62, 21, 8, 0.15),
+        -30px -45px 25px 4px rgba(62, 21, 8, 0.075),
+        -45px -50px 35px 8px rgba(62, 21, 8, 0.075),
+        
+        -5px -15px 10px -2px rgba(202, 206, 217, 0.25),
+        
+        0 0 20px 3px rgba(202, 206, 217, 0.75);
+}
+
+.right .slider {
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    background-color: black;
+
+    border-radius: 100px;
+
+    position: absolute;
+    left: 3.5px;
+    top: -3.5px;
+
+    background-image: radial-gradient(#1F273A, rgba(22, 26, 38, 1) 66%, transparent 69%),
+        linear-gradient(90deg, rgba(22, 26, 38, 0.75), transparent),
+        linear-gradient(rgba(24, 31, 49, 0.9), transparent),
+        linear-gradient(45deg, transparent 30%, #7C899C, transparent 70%),
+        linear-gradient(-45deg, transparent 30%, #7C899C, transparent 70%),
+        radial-gradient(#1F273A, #212C42, #171D2D);
+
+    box-shadow: 0 0 1px 0.75px rgba(22, 26, 38, 1),
+        0 0 2px 0.75px rgba(67, 68, 88, 0.5);
+}
+
+.right ul, .right p {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #1F233E;
+
+    font-size: 6.5px;
+
+    letter-spacing: 0.5px;
+
+    text-shadow: 0 0 0.2px #1F233E,
+        0 0 1px #BCBCD0;
+}
+
+.right ul {
+    list-style-type: none;
+    
+    position: absolute;
+    left: 415px;
+    top: 9px;
+}
+
+.right ul li {
+    margin-bottom: 9px;
+}
+
+.right ul li:first-child {
+    margin-left: -7px;
+}
+
+.right ul li:last-child {
+    margin-left: -5px;
+}
+
+.right p {
+    position: absolute;
+    top: 30px;
+    left: 325px;
+}
+
+.speed-container {
+    display: block;
+    width: 40px;
+    height: 150px;
+
+    background-color: #656581;
+    
+    border-radius: 1px;
+
+    position: absolute;
+    left: 60px;
+    top: 360px;
+
+    background-image: linear-gradient(rgba(134, 141, 169, 0.1) 0 25%, transparent 25% 50%, rgba(143, 150, 178, 0.1) 50% 75%, transparent 75%),
+        linear-gradient(90deg, rgba(159, 167, 188, 0.05), rgba(119, 130, 160, 0.1), rgba(159, 167, 188, 0.05)),
+        radial-gradient(rgba(167, 172, 202, 0.65), transparent 60%),
+        radial-gradient(#7B84A3, #929CB7, #BBC9E6);
+    background-size: 100% 4px, 
+        20% 100%, 
+        200px 200px, 
+        200% 300%;
+    background-repeat: repeat, 
+        repeat, 
+        no-repeat, 
+        no-repeat;
+    background-position: center center, 
+        center center, 
+        center center, 
+        100% 50%;
+
+
+    box-shadow: 0 0 1px #E1C3B8 inset,
+        0 0 1px 0.5px #DFC6C1,
+        0 0 2px 1px #E2C1BA,
+        0.5px 0 0.5px 0.5px #929CB7 inset,
+        -0.5px 0 0.5px 0.5px #929CB7 inset;
+}
+
+.speed-container p {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #1F233E;
+
+    font-size: 7px;
+
+    letter-spacing: 0.5px;
+
+    text-shadow: 0 0 0.2px #1F233E,
+        0 0 1px #929CB7;
+}
+
+.speed-container p:first-child {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.speed-container p:last-child {
+    position: absolute;
+    bottom: 3px;
+    left: 9px;
+}
+
+.speed-slider {
+    display: block;
+    width: 5px;
+    height: 100px;
+    border-radius: 6px;
+    background-color: #120D14;
+
+    position: absolute;
+    top: 25px;
+    left: 17px;
+
+    background-image: linear-gradient(#120D14, #1B0B15, #1D1419);
+
+    box-shadow: -0.75px 0 1px #9391A5 inset,
+        0.75px 0 1px #A79DA8 inset,
+        -0.5px 0 1px -0.15px rgba(213, 212, 219, 0.1),
+        0 0 3px #9FA7AA;
+}
+
+.speed-button-container {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+
+    background-color: #fff;
+
+    position: absolute;
+    top: 35px;
+    left: 8px;
+
+    background-image: linear-gradient(70deg, #63687E 80%, #9A9BBA);
+
+    box-shadow: 0 0 1px #63687E,
+        0 0 0.5px #63687E,
+        0 0 4px 0.5px #63687E;
+}
+
+.speed-button {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+
+    background-color: #000;
+
+    position: absolute;
+    left: -3.5px;
+    top: -1px;
+
+    background-image: radial-gradient(#353B51, #1E2736, #262739);
+
+    box-shadow: 0 0 0.5px 0.25px #262739,
+        0 0 4px rgba(19, 18, 32, 0.5),
+        
+        8px 10px 10px rgba(51, 46, 52, 0.25),
+
+        -30px -30px 30px 30px rgba(62, 21, 8, 0.1),
+        
+        -7px -10px 15px 3px rgba(62, 21, 8, 0.15),
+        -15px -25px 20px 3px rgba(62, 21, 8, 0.1),
+        -25px -50px 30px 3px rgba(62, 21, 8, 0.075),
+        
+        -5px -15px 10px -2px rgba(202, 206, 217, 0.15),
+        
+        0 0 20px 3px rgba(202, 206, 217, 0.75);
+}
+
+
+.vol-container {
+    display: block;
+    width: 40px;
+    height: 150px;
+
+    background-color: #656581;
+    
+    border-radius: 1px;
+
+    position: absolute;
+    right: 60px;
+    top: 360px;
+
+    background-image: linear-gradient(rgba(134, 141, 169, 0.1) 0 25%, transparent 25% 50%, rgba(143, 150, 178, 0.1) 50% 75%, transparent 75%),
+        linear-gradient(90deg, rgba(159, 167, 188, 0.05), rgba(119, 130, 160, 0.1), rgba(159, 167, 188, 0.05)),
+        radial-gradient(rgba(167, 172, 202, 0.65), transparent 60%),
+        radial-gradient(#7B84A3, #929CB7, #BBC9E6);
+    background-size: 100% 4px, 
+        20% 100%, 
+        200px 200px, 
+        200% 300%;
+    background-repeat: repeat, 
+        repeat, 
+        no-repeat, 
+        no-repeat;
+    background-position: center center, 
+        center center, 
+        center center, 
+        100% 50%;
+
+
+    box-shadow: 0 0 1px #E1C3B8 inset,
+        0 0 1px 0.5px #DFC6C1,
+        0 0 2px 1px #E2C1BA,
+        0.5px 0 0.5px 0.5px #929CB7 inset,
+        -0.5px 0 0.5px 0.5px #929CB7 inset;
+}
+
+.vol-container p {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #1F233E;
+
+    font-size: 7px;
+
+    letter-spacing: 0.5px;
+
+    text-shadow: 0 0 0.2px #1F233E,
+        0 0 1px #929CB7;
+}
+
+.vol-container p:first-child {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.vol-container p:last-child {
+    position: absolute;
+    bottom: 3px;
+    left: 10px;
+}
+
+.vol-slider {
+    display: block;
+    width: 5px;
+    height: 100px;
+    border-radius: 6px;
+    background-color: #120D14;
+
+    position: absolute;
+    top: 25px;
+    left: 17px;
+
+    background-image: linear-gradient(#120D14, #1B0B15, #1D1419);
+
+    box-shadow: -0.75px 0 1px #9391A5 inset,
+        0.75px 0 1px #A79DA8 inset,
+        -0.5px 0 1px -0.15px rgba(213, 212, 219, 0.1),
+        0 0 3px #9FA7AA;
+}
+
+.vol-button-container {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+
+    background-color: #fff;
+
+    position: absolute;
+    top: 60px;
+    left: 12px;
+
+    background-image: linear-gradient(70deg, #63687E 80%, #9A9BBA);
+
+    box-shadow: 0 0 1px #63687E,
+        0 0 0.5px #63687E,
+        0 0 4px 0.5px #63687E;
+}
+
+.vol-button {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+
+    background-color: #000;
+
+    position: absolute;
+    left: 3px;
+    top: 1px;
+
+    background-image: radial-gradient(#353B51, #1E2736, #262739);
+
+    box-shadow: 0 0 0.5px 0.25px #262739,
+        0 0 4px rgba(19, 18, 32, 0.5),
+        
+        8px 10px 10px rgba(51, 46, 52, 0.25),
+
+        -30px -30px 30px 30px rgba(62, 21, 8, 0.1),
+        
+        -7px -10px 15px 3px rgba(62, 21, 8, 0.15),
+        -15px -25px 20px 3px rgba(62, 21, 8, 0.1),
+        -25px -50px 30px 3px rgba(62, 21, 8, 0.075),
+        
+        -5px -15px 10px -2px rgba(202, 206, 217, 0.15),
+        
+        0 0 20px 3px rgba(202, 206, 217, 0.75);
 }

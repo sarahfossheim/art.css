@@ -1,3 +1,9 @@
+<!-- Page: https://fossheim.io -->
+<!-- Patreon: https://patreon.com/fossheim -->
+<!-- Buy Me A Coffee: https://buymeacoffee.com/fossheim -->
+
+<!-- Inspired by the Muson toy synth -->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,7 +15,77 @@
           <div class="speaker-bar"><div class="speakers"></div></div>
           <div class="muson-frame"><div class="rainbow"></div></div>
         </div>
-        <div class="letter-container">
+        <div class="range-container" aria-hidden="true">
+          <div class="range-plate">
+            <div class="left">
+              <ul class="ranges">
+                <li>1–4</li>
+                <li>1–6</li>
+                <li>1–8</li>
+                <li>1–10</li>
+              </ul>
+              <p>Range</p>
+              <div class="slider-wrapper">
+                <div class="slider"></div>
+              </div>
+            </div>
+            <div class="center">
+              <p>Volume</p>
+              <ul>
+                <li>Lo</li>
+                <li>Med</li>
+                <li>High</li>
+              </ul>
+              <div class="switch-wrapper">
+                <div class="switch-button"></div>
+              </div>
+            </div>
+            <div class="right">
+              <p>Mode</p>
+              <ul>
+                <li>Off</li>
+                <li>Organ</li>
+                <li>Organ <br />& Synth</li>
+              </ul>
+              <div class="slider-wrapper">
+                <div class="slider"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="button-container">
+          <div class="button">
+            <div class="center"></div>
+          </div>
+          <div class="button">
+            <div class="center"></div>
+          </div>
+          <div class="button">
+            <div class="center"></div>
+          </div>
+          <div class="button">
+            <div class="center"></div>
+          </div>
+          <div class="button">
+            <div class="center"></div>
+          </div>
+          <div class="button">
+            <div class="center"></div>
+          </div>
+          <div class="button">
+            <div class="center"></div>
+          </div>
+          <div class="button">
+            <div class="center"></div>
+          </div>
+          <div class="button">
+            <div class="center"></div>
+          </div>
+          <div class="button">
+            <div class="center"></div>
+          </div>
+        </div>
+        <div class="letter-container" aria-hidden="true">
           <div>
             <p>C</p>
           </div>
@@ -52,6 +128,22 @@
           <div style="z-index: 5;"></div>
           <div style="z-index: 4;"></div>
           <div style="z-index: 3;"></div>
+        </div>
+        <div class="speed-container" aria-hidden="true">
+          <p>Fast</p>
+          <div class="speed-slider"></div>
+          <div class="speed-button-container">
+            <div class="speed-button"></div>
+          </div>
+          <p>Slow</p>
+        </div>
+        <div class="vol-container" aria-hidden="true">
+          <p>High</p>
+          <div class="vol-slider"></div>
+          <div class="vol-button-container">
+            <div class="vol-button"></div>
+          </div>
+          <p>Low</p>
         </div>
       </div>
     </body>
