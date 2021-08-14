@@ -360,6 +360,17 @@ body {
         -7px -7px 5px -0.5px rgba(150, 90, 64, 0.5),
         -7px -3px 7px rgba(201, 149, 135, 0.55),
         -10px -10px 15px rgba(201, 149, 135, 0.25);
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    cursor: pointer;
+}
+.key-container > div:hover {
+    box-shadow: -5px 0 4px -2px #edecfa inset, -8px 0 6px -6px #ebeff8 inset, 3px 0 1px -1px #e9d4cf inset,
+        6px 0 5px -5px #e1e8fa inset, 0 0 0.25px 0.25px #e9d4cf, -0.75px -0.75px 1px -0.5px #e9d4cf, 0 1px 1px #bea19b,
+        -2px -2px 1px -0.5px rgba(150, 90, 64, 0.5), -2px -1px 2px rgba(201, 149, 135, 0.55),
+        -3px -3px 15px rgba(201, 149, 135, 0.25);
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: scaleY(0.96);
+    transform-origin: bottom center;
 }
 
 .letter-container {
