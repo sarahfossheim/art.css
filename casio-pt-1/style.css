@@ -671,7 +671,7 @@ body {
         -2px 0 3px -2px #574E45,
         0 8px 6px -3px #CBC8B9;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(17, 1fr);
     grid-gap: 2px;
 
 }
@@ -695,7 +695,7 @@ body {
     position: absolute;
     top: 2px;
     left: 35px;
-    grid-template-columns: 21px 21px 21px 21px 21px 21px 21px 21px 21px 21px 21px 21px 21px 21px 21px 21px;
+    grid-template-columns: repeat(16, 21px);;
     grid-gap: 21px;
 }
 
